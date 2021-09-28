@@ -6,15 +6,16 @@ body, html {
   width: auto;
   position: center;
   height: auto;
+  background-size: cover;
+  height: 100%;
 }
 
 
 
 
 
-  /*background-size: cover;
-  height: 100%;
-  color: white;*/
+
+
 
 
   /* The header bar*/
@@ -28,6 +29,16 @@ header{
 
 }
 
+
+.comingSoon{
+  margin: 50px;
+  position: relative;
+  top: 60%;
+  justify-content: right;
+  font-family: "brahnschrift", sans-serif;
+  font-size: 30px;
+
+}
 /* The text in the header*/
 nav ul {
   display: flex;
