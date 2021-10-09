@@ -1,111 +1,110 @@
 
 body, html {
   font-family:  Helvetica, arial, sans-serif;
-  margin: 0;
   background-image: url("LandingPageBG.jpg");
-  width: auto;
   position: center;
-  height: auto;
-  background-size: cover;
-  height: 100%;
+  /* height: auto;
+  width:auto; */
+  background-size:100% 100%;
   font-family: "Gemunu Libre", sans-serif;
-}
-/* 
-  The header bar*/
-header{
-
-  height: 50px;
-  /* width: 100%; */
-  display: flex;
-  justify-content: space-between;
-  
+  background-repeat: no-repeat;
+  /* overflow-y: hidden;  */
+  overflow-x: hidden;
 
 }
 
 
+.logo{
+  height: auto; 
+  width: auto; 
+  max-width: 500px; 
+  flex: auto;
+  margin:0;
+  margin-top:18%;
+  position:absolute;
+  margin-left:50px;
+
+}
 .comingSoon{
-  margin: 50px;
-  position: relative;
-  top: 60%;
-  left:30px;
-  font-family: "Gemunu Libre", sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   color: #de2302;
-
-}
-/* The text in the header*/
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  min-width: 300px;
-  font-size: 30px;
-  margin: 5px;
-  
 }
 
-
-/* the left nav bar text */
-nav a {
-  color: #444040;
-  font-weight: bold;
-  text-decoration: none;
-  padding:10px;
-  font-size: medium;
+.description{
+  margin: 80px;
+  position: relative;
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 20px;
+  color: #de2302;
+  text-align-last: right;
 }
 
+.contactus{
+position: relative;
+margin-left: 45%;
+margin-bottom:15%;
+font-family: "Gemunu Libre", sans-serif;
+font-size: 22.5px;
+border-radius: 25px;
+}
 
-/* The right nav bar text - my name*/
-h1 {
-  font-weight: bolder;
-  font-stretch: expanded;
-  padding: 7px;
-  font-size: 200%;
-  font-family: sans-serif;
-
+.whoWeAre{
+  font-size: 22.5px;
+  color:#204B57;
 }
 
 
 
 
-
-
-/* small smartphones */
-@media screen and (max-width: 450px) {
-  #bioImage {
-    height: 100px;
-    width: 100px;
+/* Laptop */
+@media screen and (max-width: 992px) {
+  body, html {
+    background-image: url("landingPageMediumLarge.jpg");
   }
-
-  .mainbio{
-    display: block;
-
+  .comingSoon{
+    font-size: 30px;
+    color: #de2302;
+  }
+  .logo{
+    max-width: 400px;
+    margin-top:0.5%;
+  }
   }
   
-}
-
-/* Large smartphones */
-@media screen and (max-width: 540px) {
-  #bioImage {
-    height: 100px;
-    width: 100px;
-  }
-  .mainBio{
-    display: inline-block;
-  }
-  h1 {
-    font-weight: bolder;
-    font-stretch: expanded;
-    padding: 7px;
-    font-size: 140%;
-    font-family: sans-serif;
-  
-  }
-  }
-
-/* tablet size  */
+  /* tablet */
 @media screen and (max-width: 768px) {
-    #bioImage {
-      height: 150px;
-      width: 150px;
+  body, html {
+    background-image: url("landingPageMedium.jpg");
   }
-}
+  .comingSoon{
+    font-size: 25px;
+    color: #de2302;
+  }
+  .logo{
+    max-width: 300px;
+    margin-top:0.5%; 
+  }
+  }
+
+    /* phone */
+@media screen and (max-width: 576px) {
+  body, html {
+    background-image: url("landingPageSmall.jpg");
+  }
+  .comingSoon{
+    font-size: 20px;
+    color: #de2302;
+    margin-top: 150px;
+  }
+  .logo{
+    max-width: 250px; 
+    margin-top:0.5%;
+  }
+  .description{
+    margin: 80px; 
+    font-size: 15px;
+    color: #de2302;
+    text-align-last: right;
+    
+  }
+  }

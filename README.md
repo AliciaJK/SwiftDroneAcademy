@@ -35,3 +35,45 @@ https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid
 https://i.pinimg.com/originals/c3/12/16/c31216424b811a9770b5b7dacb06fa3e.jpg
   
 https://images.ctfassets.net/hrltx12pl8hq/5GaLeZJlLyOiQC4gOA0qUM/a0398c237e9744ade8b072f99349e07a/shutterstock_152461202_thumb.jpg?fit=fill&w=368&h=207
+
+
+/* small smartphones */
+@media screen and (max-width: 450px) {
+  #bioImage {
+    height: 100px;
+    width: 100px;
+  }
+
+  .mainbio{
+    display: block;
+
+  }
+  
+}
+
+/* Large smartphones */
+@media screen and (max-width: 540px) {
+  #bioImage {
+    height: 100px;
+    width: 100px;
+  }
+  .mainBio{
+    display: inline-block;
+  }
+  h1 {
+    font-weight: bolder;
+    font-stretch: expanded;
+    padding: 7px;
+    font-size: 140%;
+    font-family: sans-serif;
+  
+  }
+  }
+
+/* tablet size  */
+@media screen and (max-width: 768px) {
+    #bioImage {
+      height: 150px;
+      width: 150px;
+  }
+}
