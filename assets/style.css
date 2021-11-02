@@ -28,15 +28,16 @@ body, html {
 .comingSoon{
   font-size: 35px;
   color: #de2302;
+
 }
 
 .description{
   margin: 80px;
-  position: relative;
+  /* position: relative; */
   font-family: "Gemunu Libre", sans-serif;
   font-size: 20px;
   color: #de2302;
-  text-align-last: right;
+  text-align: right;
 }
 
 .contactus{
@@ -51,60 +52,78 @@ border-radius: 25px;
 .whoWeAre{
   font-size: 22.5px;
   color:#204B57;
+  max-width:40%;
+  display: block;
+  right:12%;
+  
+
 }
 
 
+.comingSoon{
+  font-size: 30px;
+  color: #de2302;
+  margin-top: 175px;
 
-
-/* Laptop */
-@media screen and (max-width: 992px) {
-  body, html {
-    background-image: url("landingPageMediumLarge.jpg");
-  }
-  .comingSoon{
-    font-size: 30px;
-    color: #de2302;
-  }
-  .logo{
-    max-width: 400px;
-    margin-top:0.5%;
-  }
-  }
+}
+.logo{
+  max-width: 250px; 
+  margin-top:0.5%;
+}
+.description{
+  /* margin: 80px;  */
+  font-size: 15px;
+  color: #de2302;
+  text-align-last: right;
   
-  /* tablet */
-@media screen and (max-width: 768px) {
-  body, html {
-    background-image: url("landingPageMedium.jpg");
-  }
-  .comingSoon{
-    font-size: 25px;
-    color: #de2302;
-  }
-  .logo{
-    max-width: 300px;
-    margin-top:0.5%; 
-  }
-  }
+}
+
+.whoWeAre{
+  font-size: 22.5px;
+  color:#204B57;
+  margin-top:50px;
+  max-width:99%;
+}
+
+.whoWeAre p{
+
+  max-width:99%;
+}
+
 
     /* phone */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1500px) {
   body, html {
     background-image: url("landingPageSmall.jpg");
   }
   .comingSoon{
-    font-size: 20px;
+    font-size: 30px;
     color: #de2302;
-    margin-top: 150px;
+    margin-top: 175px;
+
   }
   .logo{
     max-width: 250px; 
     margin-top:0.5%;
   }
   .description{
-    margin: 80px; 
+    /* margin: 80px;  */
     font-size: 15px;
     color: #de2302;
     text-align-last: right;
     
   }
+
+  .whoWeAre{
+    font-size: 22.5px;
+    color:#204B57;
+    margin-top:50px;
+    max-width:99%;
+  }
+
+  .whoWeAre p{
+
+    max-width:99%;
+  }
+  
   }
